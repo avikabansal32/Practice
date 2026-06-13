@@ -1,4 +1,4 @@
-'''
+
 a = 5
 b = 3
 sum = a + b
@@ -26,7 +26,7 @@ print("WELCOME!", name)
 
 val = int(input("Enter a number: "))
 print(type(val), val)
-)(*&^%$#@!!@#$%^&*()_+~!@#$%^&*()_+~!@#$%^&*()_+)
+#)(*&^%$#@!!@#$%^&*()_+~!@#$%^&*()_+~!@#$%^&*()_+)
 fruits = ["apple", "banana", "mango"]
 print(fruits)
 
@@ -82,11 +82,11 @@ student[2] = "avika"
 print(student)
 
 list = ["avika", "karan", "yadav", "bansal"]
-##list.append(5)
-#print(list)
-#print(list.sort())
-#list.reverse()
-#print(list)
+list.append(5)
+print(list)
+print(list.sort())
+list.reverse()
+print(list)
 print(list.insert(1, "avika"))
 
 Movies = []
@@ -134,9 +134,114 @@ count = 1
 while count <= 5: 
    print("hello")
    count += 1
-'''
+
 i = 8
 while i >= 1:
     print(i)
     i -= 1
 print("Loop Ended")
+
+i = 0
+while i >= -16:
+    if(i == 9): 
+        i -= 1
+        continue
+    print(i)
+    i -= 1
+
+string = "Avika Bansal" 
+for char in string:
+    print(char)
+    if(char == 'p'):
+        break
+else:
+    print("Loop Ended")
+
+seq = range(10)
+for i in seq:
+    print(i+1)
+
+for i in range(32,64,8):
+    print(i)
+
+def calc_sum(a,b):
+    sum = a+ b
+    print(sum)
+
+calc_sum(5,8)    
+calc_sum(10,20)
+
+def avg(a,b,c):
+    sum = a + b + c
+    avg = sum / 3
+    print(avg)
+
+avg(5,9,10)
+avg(10,20,30)
+
+def show(n):
+    if n == 0:
+        return
+    print(n)
+    show(n-1)
+    print("END")
+
+show(5)
+
+def fact(n):
+    if n == 0:
+        return 1        
+    return fact(n-1) * n
+
+print(fact(6))
+
+class Student:
+    name = "Avika Bansal"
+
+s1 = Student()
+print(s1.name)
+
+class student:
+    def __init__(self, name, age):
+        self.name = print(name)
+        self.age = print(age)
+        print("Student created successfully")
+
+    def welcome(self):
+         print("Welcome", self.name)
+
+s1 = student("Avika Bansal", 17)
+s1.welcome()
+
+class account:
+    def __init__(self, account, pas):
+        self.account = account
+        self.__pas = pas
+
+s1 = account("Avika", "1234")
+print(s1.account)
+
+class car:
+    @staticmethod
+    def start():
+        print("Car started")
+    @staticmethod
+    def stop():
+        print("Car stopped")
+    def __init__(self, type):
+        self.type = type
+
+class Toyota(car):
+    def __init__(self, brand):
+        self.brand = brand
+
+class Honda(Toyota):
+    def __init__(self, type):
+        self.type = type
+        super().__init__("car")
+ 
+ class student:
+    def __init__(self, phy, chem, math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math

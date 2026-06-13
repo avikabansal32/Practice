@@ -1,0 +1,13 @@
+import random
+target = random.randint(1,100)
+
+while True:
+    choice = int(input("Guess the number: "))
+    if choice > target:
+        print("The number guessed is bigger, Try again!!")
+    elif target > choice:
+        print("The number guessed is smaller, Try again!!")
+    elif target == choice:
+        print("You guess is correct. the number was: ", target)
+        print("You won!! Congratulations<3<3")
+        break
