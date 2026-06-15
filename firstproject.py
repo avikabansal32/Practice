@@ -1,4 +1,4 @@
-
+'''
 a = 5
 b = 3
 sum = a + b
@@ -239,9 +239,33 @@ class Honda(Toyota):
     def __init__(self, type):
         self.type = type
         super().__init__("car")
- 
- class student:
+
+class student:
     def __init__(self, phy, chem, math):
         self.phy = phy
         self.chem = chem
         self.math = math
+    
+    @property
+    def percent(self):
+        sum = self.phy + self.chem + self.math
+        percent = sum / 3
+        return percent
+''' 
+class complex:
+    def __init__(self, real, img):
+       self.real = real
+       self.img = img
+    def showno(self):
+        print(self.real, "i +", self.img, "j")
+    def __add__(self, other):
+        real = self.real + other.real
+        img = self.img + other.img
+        return complex(real, img)
+    def __sub__(self, other):
+        real = self.real - other.real
+        img = self.img - other.img
+        return complex(real, img)
+
+        
+    
